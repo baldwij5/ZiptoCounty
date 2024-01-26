@@ -10,7 +10,7 @@ import numpy as np
 ## Source: https://www.huduser.gov/portal/dataset/uspszip-api.html
 
 
-hudToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2IiwianRpIjoiNGFmMzE3ZjYyODg3ZDEzN2Y0NjM5NmNlOGNhZGFlOGMzMGE5NTFjNWFmYWQyNGU0ZDkzNDZlMDY4ZjU5OTUwOTE2YzM2MmNmNmYyNjRiOTYiLCJpYXQiOjE3MDYyODIxNDguMzQ5OTQzLCJuYmYiOjE3MDYyODIxNDguMzQ5OTQ1LCJleHAiOjIwMjE5MDEzNDguMzQ2MDk5LCJzdWIiOiI2NTAwMyIsInNjb3BlcyI6W119.Gw86lTFmAr6A0IHpL2ehyY4FdELLp6jfXVrfRaAY09NWB9EpWlTDUQKndXyc4e78r7VTRWaPUJ1eve5YSgV71A"
+hudToken = "TOKEN"
 
 # url = "https://www.huduser.gov/hudapi/public/usps"
 
@@ -20,7 +20,7 @@ hudToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2IiwianRpIjoiNGFmMzE
 
 # Note that type is set to 1 which will return values for the ZIP to Tract file and query is set to VA which will return Zip Codes in Virginia
 url = "https://www.huduser.gov/hudapi/public/usps?type=1&query=VA"
-token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI2IiwianRpIjoiNGFmMzE3ZjYyODg3ZDEzN2Y0NjM5NmNlOGNhZGFlOGMzMGE5NTFjNWFmYWQyNGU0ZDkzNDZlMDY4ZjU5OTUwOTE2YzM2MmNmNmYyNjRiOTYiLCJpYXQiOjE3MDYyODIxNDguMzQ5OTQzLCJuYmYiOjE3MDYyODIxNDguMzQ5OTQ1LCJleHAiOjIwMjE5MDEzNDguMzQ2MDk5LCJzdWIiOiI2NTAwMyIsInNjb3BlcyI6W119.Gw86lTFmAr6A0IHpL2ehyY4FdELLp6jfXVrfRaAY09NWB9EpWlTDUQKndXyc4e78r7VTRWaPUJ1eve5YSgV71A"
+token = "TOKEN"
 headers = {"Authorization": "Bearer {0}".format(token)}
 
 response = requests.get(url, headers = headers)
